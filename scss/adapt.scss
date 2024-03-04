@@ -1,0 +1,718 @@
+@media (max-width: 320px) {
+    .main {
+        .filter {
+            &__block {
+                padding-bottom: 30px;
+            }
+
+            &__checkboxes {
+                gap: 20px;
+            }
+        }
+
+        .content {
+            &__title {
+                font-size: 1.5em;
+            }
+
+            &__product-item {
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 15px;
+            }
+
+            &__product-img-block {
+                width: 100%;
+                height: 270px;
+            }
+
+            &__tab-list {
+                width: 100%;
+
+                &:first-child {
+                    .content__tab-link {
+                        border-radius: 5px 5px 0 0;
+                    }
+                }
+
+                &:last-child {
+                    .content__tab-link {
+                        border-radius: 5px 5px 0 0;
+                    }
+                }
+            }
+
+            &__tab-link {
+                border-radius: 5px 5px 0 0;
+                padding: 15px 0;
+            }
+        }
+
+        .product-info {
+            padding-top: 0;
+
+            &__param {
+                font-size: .785em;
+            }
+
+            &__price {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 10px;
+                padding-bottom: 8px;
+                gap: 25px;
+            }
+
+            &__counter {
+                padding: 0;
+                order: 1;
+            }
+
+            &__total {
+                order: 2;
+                font-size: 1em;
+            }
+
+            &__discount {
+                order: 3;
+                flex-direction: row-reverse;
+                align-items: flex-end;
+                gap: 20px;
+            }
+
+            &__button {
+                padding: 12px 10px;
+            }
+        }
+
+        .character-pane {
+            &__item {
+                font-size: .875em;
+            }
+
+            &__value-block {
+                text-align: right;
+            }
+        }
+    }
+
+    .call {
+        padding: 43px 0 60px 0;
+        background-image: url(../assets/img/bg-blue-mobile.svg);
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 1.5em;
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            &__field{
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 50px 0 28px 0;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__logo {
+            padding-bottom: 32px;
+        }
+
+        &__navlist {
+            height: auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__navlink {
+            font-weight: 500;
+        }
+
+        &__rights {
+            max-width: 100%;
+        }
+
+        &__contact {
+            padding-top: 28px;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        &__phone {
+            padding-bottom: 20px;
+        }
+
+        &__policy {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        &__copyright {
+            gap: 15px;
+            align-items: center;
+        }
+    }
+
+    .social {
+        gap: 17px;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 425px) {
+    .main {
+        .filter {
+            &__block {
+                padding-bottom: 30px;
+            }
+
+            &__checkboxes {
+                gap: 20px;
+            }
+        }
+
+        .content {
+            &__title {
+                font-size: 1.5em;
+            }
+
+            &__product-item {
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 15px;
+            }
+
+            &__product-img-block {
+                width: 100%;
+                height: 270px;
+            }
+
+            &__tab-list {
+                width: calc(100% / 2);
+            }
+
+            &__tab-link {
+                padding: 15px 0;
+            }
+        }
+
+        .product-info {
+            padding-top: 0;
+
+            &__price {
+                padding-bottom: 8px;
+                gap: 25px;
+            }
+
+            &__counter {
+                padding: 0;
+                order: 1;
+            }
+
+            &__total {
+                order: 2;
+                font-size: 1em;
+            }
+
+            &__discount {
+                order: 3;
+                flex-direction: row-reverse;
+                align-items: flex-end;
+                gap: 20px;
+            }
+
+            &__button {
+                padding: 12px 15px;
+            }
+        }
+
+        .character-pane {
+            &__item {
+                font-size: .875em;
+            }
+
+            &__value-block {
+                width: 90px;
+            }
+        }
+    }
+
+    .call {
+        padding: 43px 0 60px 0;
+        background-image: url(../assets/img/bg-blue-mobile.svg);
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 1.5em;
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .footer {
+        padding: 50px 0 28px 0;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__logo {
+            padding-bottom: 32px;
+        }
+
+        &__navlist {
+            height: auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__navlink {
+            font-weight: 500;
+        }
+
+        &__rights {
+            max-width: 100%;
+        }
+
+        &__contact {
+            padding-top: 28px;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        &__phone {
+            padding-bottom: 20px;
+        }
+
+        &__policy {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        &__copyright {
+            gap: 15px;
+            align-items: center;
+        }
+    }
+
+    .social {
+        gap: 17px;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 354px) {
+    .main {
+        .product-info {
+            &__param {
+                font-size: .785em;
+            }
+
+            &__price {
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+
+        .character-pane {
+            &__value-block {
+                text-align: right;
+            }
+        }
+    }
+
+    .social {
+        gap: 17px;
+    }
+}
+
+// Стили для экранов от xs до sm включительно (до 576px)
+@media (min-width: 424px) and (max-width: 575px) {
+    .main {
+        .filter {
+            &__block {
+                padding-bottom: 30px;
+            }
+
+            &__checkboxes {
+                gap: 20px;
+            }
+        }
+
+        .content {
+            &__title {
+                font-size: 1.5em;
+            }
+
+            &__product-item {
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 15px;
+            }
+
+            &__product-img-block {
+                width: 100%;
+                height: 360px;
+            }
+        }
+
+        .product-info {
+            padding-top: 0;
+
+            &__price {
+                padding-bottom: 8px;
+                gap: 25px;
+            }
+
+            &__counter {
+                padding: 0;
+                order: 1;
+            }
+
+            &__total {
+                order: 2;
+            }
+
+            &__discount {
+                order: 3;
+                flex-direction: row-reverse;
+                align-items: flex-end;
+                gap: 20px;
+            }
+        }
+
+        .character-pane {
+            &__value-block {
+                width: 120px;
+            }
+        }
+    }
+
+    .call {
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 1.5em;
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .footer {
+        padding: 50px 0 28px 0;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__logo {
+            padding-bottom: 32px;
+        }
+
+        &__navlist {
+            height: auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__navlink {
+            font-weight: 500;
+        }
+
+        &__rights {
+            max-width: 100%;
+        }
+
+        &__contact {
+            padding-top: 28px;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        &__phone {
+            padding-bottom: 20px;
+        }
+
+        &__policy {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        &__copyright {
+            gap: 15px;
+            align-items: center;
+        }
+    }
+
+    .social {
+        gap: 17px;
+    }
+}
+
+// Стили для экранов от sm до md включительно (от 576px до 767px)
+@media (min-width: 576px) and (max-width: 767px) {
+    .main {
+        .filter {
+            &__block {
+                padding-bottom: 40px;
+            }
+        }
+
+        .content {
+            &__product-item {
+                flex-direction: column;
+                gap: 20px;
+                padding-top: 15px;
+            }
+
+            &__product-img-block {
+                width: 100%;
+                height: 400px;
+            }
+        }
+
+        .product-info {
+            padding-top: 0;
+
+            &__price {
+                justify-content: flex-end;
+                flex-direction: row-reverse;
+                padding-bottom: 8px;
+            }
+
+            &__counter {
+                padding: 0;
+            }
+
+        }
+    }
+
+    .call {
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 1.5em;
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+    }
+
+    .footer {
+        padding: 50px 0 28px 0;
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        &__logo {
+            padding-bottom: 32px;
+        }
+
+        &__navlist {
+            height: auto;
+            gap: 20px;
+            align-items: center;
+        }
+
+        &__navlink {
+            font-weight: 500;
+        }
+
+        &__rights {
+            max-width: 100%;
+        }
+
+        &__contact {
+            padding-top: 28px;
+            align-items: center;
+            gap: 15px;
+            text-align: center;
+        }
+
+        &__phone {
+            padding-bottom: 20px;
+        }
+
+        &__policy {
+            padding-top: 10px;
+            text-align: center;
+        }
+
+        &__copyright {
+            gap: 15px;
+            align-items: center;
+        }
+    }
+
+    .social {
+        gap: 17px;
+    }
+}
+
+// Стили для экранов от md до lg включительно (от 768px до 991px)
+@media (min-width: 768px) and (max-width: 991px) {
+   
+    .main {
+        .filter {
+            &__block {
+                padding-bottom: 40px;
+            }
+
+            &__checkboxes {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px 10px;
+            }
+        }
+
+        .content {
+            &__product-img-block {
+                width: 320px;
+                height: 270px;
+            }
+        }
+    }
+
+    .call {
+        &__wrapper {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        &__title {
+            font-size: 1.5em;
+        }
+    }
+
+    .footer {
+        padding: 60px 0;
+
+        &__wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+            gap: 20px 0px;
+            grid-template-areas:
+                "logo logo logo"
+                "feature menu1 menu2"
+                "contact contact contact"
+                "copyright policy policy";
+        }
+
+        &__navlist {
+            height: auto;
+            gap: 20px;
+        }
+
+        &__rights {
+            max-width: 100%;
+        }
+
+        &__contact {
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+// Стили для экранов от lg до xl включительно (от 992px до 1199px)
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header{
+        &__address{
+            max-width: 220px;
+        }
+    }
+    .main {
+        .filter {
+            &__block {
+                padding-bottom: 40px;
+            }
+
+            &__checkboxes {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 20px 10px;
+            }
+        }
+    }
+
+    .call {
+        &__title {
+            font-size: 1.5em;
+        }
+    }
+
+    .footer {
+        &__wrapper {
+            gap: 0 20px;
+        }
+    }
+}
+
+// Стили для экранов от xl до xxl включительно (от 1200px до 1399px)
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .footer {
+        &__wrapper {
+            gap: 0 50px;
+        }
+    }
+}
+
+// Стили для экранов больше xxl (1400px и более)
+@media (min-width: 1400px) {}

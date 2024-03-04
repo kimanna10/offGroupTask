@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="new-integrity-hash" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adapt.css" />
+
+    <title>TURBO LOGO</title>
+</head>
+
+<body>
+    <!--HEADER SECTION-->
+    <div class="header">
+        <div class="container header-container">
+            <div class="header__logo mobile-logo">
+                <img class="header__logo-img" src="assets/logo.svg" alt="logo">
+            </div>
+            <div class="header__drop drop" id="mask-container">
+                <div class="header__drop-cart-icon cart"></div>
+                <div class="header__drop-info">2</div>
+            </div>
+
+
+            <div class="header__button-menu">
+                <div class="header__button-text">Меню</div>
+                <div class="hamburger">
+                    <div class="hamburger__one"></div>
+                    <div class="hamburger__two"></div>
+                    <div class="hamburger__three"></div>
+                </div>
+            </div>
+            
+            <div class="header__wrapper">
+                <div class="header__top">
+                    <div class="header__logo">
+                        <img class="header__logo-img" src="assets/logo.svg" alt="logo">
+                    </div>
+                    <div class="header__address">
+                        Гельсингфорсская ул., 4 корпус 1, Санкт-Петербург, 194044
+                    </div>
+                    <div class="header__login login">
+                        <a class="login__login-link" href="#">
+                            <div class="login__icon-user user"></div>
+                            <div class="login__login-text">Вход</div>
+                        </a>
+                    </div>
+                    <div class="header__contact">
+                        <div class="header__social social">
+                            <a class="header__social-link" href="#">
+                                <div class="header__social-icon social-icon telegram"></div>
+                            </a>
+                            <a class="header__social-link" href="#">
+                                <div class="header__social-icon social-icon whatsapp"></div>
+                            </a>
+                        </div>
+                        <div class="header__phone">
+                            <div class="header__icon-phone phone"></div>
+                            <div class="header__number">+7 (812) 904-91-57</div>
+                        </div>
+                    </div>
+                    <div class="header__cart">
+                        <div class="header__cart-icon cart"></div>
+                        <div class="header__cart-info">
+                            <div class="header__cart-info-count">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__bottom">
+                    <ul class="header__navlist">
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">О компании</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link active" href="#">Каталог</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Услуги</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Оплата / Доставка</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Гарантии</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Опыт</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Новости</a></li>
+                        <li class="header__nav-item"><a class="header__nav-link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Модальное меню для мобильных устройств-->
+            <div class="modal-menu" id="modalMenu">
+                <div class="container">
+                    <div class="modal-menu__wrapper">
+                        <ul class="modal-menu__navlist">
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">О компании</a>
+                            </li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Каталог</a></li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Услуги</a></li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Оплата /
+                                    Доставка</a></li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Гарантии</a></li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Опыт</a></li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Новости</a></li>
+                            <li class="modal-menu__nav-item"><a class="modal-menu__nav-link" href="#">Контакты</a></li>
+                        </ul>
+
+                        <div class="modal-menu__contact">
+                            <div class="modal-menu__social social">
+                                <a class="modal-menu__social-link" href="#">
+                                    <div class="modal-menu__social-icon social-icon telegram"></div>
+                                </a>
+                                <a class="modal-menu__social-link" href="#">
+                                    <div class="modal-menu__social-icon social-icon whatsapp"></div>
+                                </a>
+                            </div>
+                            <div class="modal-menu__phone">
+                                <div class="modal-menu__icon-phone phone"></div>
+                                <div class="modal-menu__number">+7 (812) 904-91-57</div>
+                            </div>
+                        </div>
+
+                        <div class="modal-menu__login login">
+                            <a class="login__login-link" href="#">
+                                <div class="login__icon-user user"></div>
+                                <div class="login__login-text">Вход</div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--MAIN SECTION-->
+    <div class="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__breadcrumbs">
+                    <a class="main__breadcrumbs-link" href="#">Главная</a> /
+                    <a class="main__breadcrumbs-link" href="#">Каталог</a>
+                    <span class="main__current-product"> / ИБП CyberPower BU600E</span>
+                </div>
+
+                <div class="main__body row">
+                    <div class="main__toggle-block">
+                        <div class="main__title">Каталог</div>
+                        <button class="main__toggle-button btn">
+                            <div class="main__filter-icon filter-icon"></div>Фильтр
+                        </button>
+                    </div>
+
+                    <div class="main__filter filter col-xl-3">
+                        <span class="filter__toggle-icon">&#10006;</span>
+                        <div class="filter__block">
+                            <div class="filter__title">
+                                Категория
+                            </div>
+                            <div class="filter__checkboxes">
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox1">
+                                    <label for="checkbox1" class="filter__check-label">Интерактивные ИБП</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox2">
+                                    <label for="checkbox2" class="filter__check-label">SMART и онлайн ИБП</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox3">
+                                    <label for="checkbox3" class="filter__check-label">Трехфазные системы</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox4">
+                                    <label for="checkbox4" class="filter__check-label">Распределители питания</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox5">
+                                    <label for="checkbox5" class="filter__check-label">Мониторинг и управление</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox6">
+                                    <label for="checkbox6" class="filter__check-label">ИБП для систем отопления</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox7">
+                                    <label for="checkbox7" class="filter__check-label">Сетевые фильтры</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox8">
+                                    <label for="checkbox8" class="filter__check-label">Стабилизатор напряжения</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox9">
+                                    <label for="checkbox9" class="filter__check-label">Батареи</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox10">
+                                    <label for="checkbox10" class="filter__check-label">Программное обеспечение</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox11">
+                                    <label for="checkbox11" class="filter__check-label">Технологии</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="filter__block">
+                            <div class="filter__title">
+                                Производитель
+                            </div>
+                            <div class="filter__checkboxes">
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox12">
+                                    <label for="checkbox12" class="filter__check-label">Мониторинг и управление</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox13">
+                                    <label for="checkbox13" class="filter__check-label">ИБП для систем отопления</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox14">
+                                    <label for="checkbox14" class="filter__check-label">Сетевые фильтры</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox15">
+                                    <label for="checkbox15" class="filter__check-label">Стабилизатор напряжения</label>
+                                </div>
+                                <div class="filter__checkitem">
+                                    <input type="checkbox" class="filter__check-input form-check-input" id="checkbox16">
+                                    <label for="checkbox16" class="filter__check-label">Батареи</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main__content content col-xl-9">
+                        <div class="content__title">
+                            ИБП CyberPower BU600E
+                        </div>
+                        <div class="content__product-item">
+                            <div class="content__product-img-block">
+                                <div class="content__flags">
+                                    <div class="content__flags-item content__flags-item--hit">Хит</div>
+                                    <div class="content__flags-item content__flags-item--new">Новинка</div>
+                                </div>
+                                <div class="content__product-img" id="mainImage"></div>
+                                <div class="thumbnails" id="thumbnails">
+                                    <img class="thumbnails__item" src="assets/img/product-1.svg" alt="Thumbnail 1"
+                                        onclick="changeImage('assets/img/product-1.svg', this)">
+                                    <img class="thumbnails__item active" src="assets/img/product-1.svg"
+                                        alt="Thumbnail 2" onclick="changeImage('assets/img/product-1.svg', this)">
+                                    <img class="thumbnails__item" src="assets/img/product-1.svg" alt="Thumbnail 3"
+                                        onclick="changeImage('assets/img/product-1.svg', this)">
+                                </div>
+                            </div>
+                            <div class="content__product-info product-info">
+                                <div class="product-info__num">
+                                    Артикул: <span class="product-info__id">3434е3о</span>
+                                </div>
+                                <div class="product-info__desc">
+                                    <div class="product-info__param">
+                                        Watts
+                                        <span class="product-info__value">360</span>
+                                    </div>
+                                    <div class="product-info__param">
+                                        Выходное напряжение ( В перем. )
+                                        <span class="product-info__value">230 ± 10%</span>
+                                    </div>
+                                    <div class="product-info__param">
+                                        Время работы при 90Вт ( мин )
+                                        <span class="product-info__value">18</span>
+                                    </div>
+                                    <div class="product-info__param">
+                                        Выходные разъемы
+                                        <span class="product-info__value">Schuko x 3</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-info__price">
+                                    <div class="product-info__total">
+                                        <span class="product-info__total-sum" id="total-sum">0</span> р.
+                                    </div>
+
+                                    <div class="product-info__discount">
+                                        <div class="product-info__sale">-20%</div>
+                                        <div class="product-info__sale-sum">23 000 р.</div>
+                                    </div>
+                                    <div class="product-info__counter">
+                                        <button class="product-info__button-count" id="decrement">-</button>
+                                        <span class="product-info__count" id="counter-value">0</span>
+                                        <button class="product-info__button-count" id="increment">+</button>
+                                    </div>
+                                </div>
+
+                                <div class="product-info__buttons">
+                                    <button type="submit"
+                                        class="product-info__button button-yellow button-yellow--filled">В
+                                        корзину</button>
+                                    <button type="submit"
+                                        class="product-info__button button-blue button-blue--outlined">Быстрый
+                                        заказ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="content__tab">
+
+                            <ul id="current-product" role="tablist"
+                                class="content__tab-pills nav nav-tabs nav-pills with-arrow lined flex-row text-center">
+                                <li class="content__tab-list nav-item">
+                                    <a id="character-tab" data-toggle="tab" href="#character" role="tab"
+                                        aria-controls="character" aria-selected="true"
+                                        class="content__tab-link nav-link mr-sm-3 active">
+                                        Характеристики
+                                    </a>
+                                </li>
+                                <li class="content__tab-list nav-item">
+                                    <a id="document-tab" data-toggle="tab" href="#document" role="tab"
+                                        aria-controls="document" aria-selected="false"
+                                        class="content__tab-link nav-link mr-sm-3">
+                                        Документация
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div id="balance-content" class="content__tab-content tab-content">
+                                <div id="character" role="tabpanel" aria-labelledby="character-tab"
+                                    class="content__tab-pane tab-pane fade show active">
+                                    <div class="character-pane">
+                                        <div class="character-pane__item">
+                                            <div class="character-pane__param">Производитель</div>
+                                            <div class="character-pane__value-block">
+                                                <div class="character-pane__value">CyberPower</div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-dashed-line"></div>
+                                        <div class="character-pane__item">
+                                            <div class="character-pane__param">Страна производства</div>
+                                            <div class="character-pane__value-block">
+                                                <div class="character-pane__value">Тайвань</div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-dashed-line"></div>
+                                        <div class="character-pane__item">
+                                            <div class="character-pane__param">Мощность выход</div>
+                                            <div class="character-pane__value-block">
+                                                <div class="character-pane__value">340 W</div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-dashed-line"></div>
+                                        <div class="character-pane__item">
+                                            <div class="character-pane__param">Напряжение вход/выход</div>
+                                            <div class="character-pane__value-block">
+                                                <div class="character-pane__value">220 V</div>
+                                            </div>
+                                        </div>
+                                        <div class="custom-dashed-line"></div>
+                                        <div class="character-pane__item">
+                                            <div class="character-pane__param">Количество фаз вход/выход</div>
+                                            <div class="character-pane__value-block">
+                                                <div class="character-pane__value">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="document" role="tabpanel" aria-labelledby="document-tab"
+                                    class="content__tab-pane tab-pane fade">
+                                    <div class="document-pane">
+                                        <div class="document-pane__item">
+                                            <div class="document-pane__icon document"></div>
+                                            <div class="document-pane__doc">
+                                                <a class="document-pane__doc-title" href="#">Документ.pdf</a>
+                                            </div>
+                                        </div>
+                                        <div class="document-pane__item">
+                                            <div class="document-pane__icon document"></div>
+                                            <div class="document-pane__doc">
+                                                <a class="document-pane__doc-title" href="#">Документ2.docx</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--CALL TO ACTION SECTION-->
+    <div class="call">
+        <div class="container">
+            <div class="call__wrapper">
+
+                <div class="call__title">Полезная рассылка</div>
+
+                <div class="call__email-block">
+                    <form class="email-form">
+                        <div class="email-form__field form-group">
+                            <label class="email-form__label" for="email">Почта</label>
+                            <input type="email" class="email-form__input form-control" id="email"
+                                placeholder="E-mail....">
+                        </div>
+                        <div class="email-form__check form-group form-check">
+                            <input type="checkbox" class="email-form__check-input form-check-input" id="exampleCheck1">
+                            <label class="email-form__check-label form-check-label" for="exampleCheck1">Подтверждаю свое
+                                согласие на обработку своих персональных данных
+                                в соответствии с Политикой конфиденциальности </label>
+                        </div>
+                        <div class="email-form__button-block">
+                            <button type="submit"
+                                class="email-form__button button-yellow button-yellow--filled">Отправить</button>
+
+                        </div>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER SECTION-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+
+                <div class="footer__logo">
+                    <img class="footer__logo-img" src="assets/logo.svg" alt="logo">
+                </div>
+
+                <div class="footer__feature">
+                    <ul class="footer__navlist">
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Доставка / Оплата
+                            </a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Каталог
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__menu1">
+                    <ul class="footer__navlist">
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Гарантии
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__menu2">
+                    <ul class="footer__navlist">
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Опыт
+                            </a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Новости
+                            </a>
+                        </li>
+                        <li class="footer__navitem">
+                            <a class="footer__navlink" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__contact">
+                    <div class="footer__phone">
+                        <div class="footer__icon-phone phone"></div>
+                        <div class="footer__number">+7 (812) 904-91-57</div>
+                    </div>
+                    <div class="footer__address">
+                        Гельсингфорсская ул., 4 корпус 1, Санкт-Петербург, 194044
+                    </div>
+                    <div class="footer__mail">
+                        HJYolv@woevg.com
+                    </div>
+                </div>
+
+                <div class="footer__policy">
+                    Политика обработки персональных данных
+                </div>
+
+
+                <div class="footer__copyright">
+                    <div class="footer__social social">
+                        <a class="footer__social-link" href="#">
+                            <div class="footer__social-icon social-icon telegram"></div>
+                        </a>
+                        <a class="footer__social-link" href="#">
+                            <div class="footer__social-icon social-icon whatsapp"></div>
+                        </a>
+                    </div>
+
+                    <div class="footer__rights">
+                        <script>document.write(new Date().getFullYear());</script>
+                        &copy; Все права защищены.
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
